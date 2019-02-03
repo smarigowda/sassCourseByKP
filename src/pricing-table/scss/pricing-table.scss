@@ -28,4 +28,42 @@ $ls: 5px;
 $spacer: 1rem;
 $bs: 0 0 $spacer $light-gray;
 
-// 
+// General Styles
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $ff;
+    font-size: $fs-body;
+    color: $clr-body;
+}
+
+h2 {
+    font-size: $fs-h2;
+    color: $clr-heading;
+    letter-spacing: $ls;
+    text-transform: uppercase;
+}
+
+.pricing {
+    text-align: center;
+}
+
+.prices {
+    display: flex;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.price {
+    background: $white;
+    box-shadow: $bs;
+    padding: 5 * $spacer;
+    &__title {
+        color: $clr-accent;
+    }
+}
