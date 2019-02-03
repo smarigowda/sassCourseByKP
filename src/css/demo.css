@@ -7,6 +7,14 @@ h1 {
 }
 
 h1 span {
-  color: green;
+  color: red;
+}
+
+h1:hover {
+  background-color: yellow;
+}
+
+h1:active {
+  background-color: green;
 }
 /*# sourceMappingURL=demo.css.map */
