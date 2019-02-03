@@ -1,0 +1,83 @@
+/* =|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+
+   Colors you can use: 
+   #938581  #75C9C8  #FCFFFD
+
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+
+   All colors, the box-shadow, and the border-radius
+   must be set-up as variables.
+
+=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=| */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: sans-serif;
+  line-height: 1.6;
+  /* this is being used to center the card on the screen */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  width: 60%;
+  padding: 2em;
+  -webkit-box-shadow: 0 0 15px #938581;
+          box-shadow: 0 0 15px #938581;
+  border-radius: 10px;
+}
+
+.card__title {
+  color: #938581;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 45px;
+  text-decoration: none;
+  border-radius: 10px;
+  -webkit-transition: background-color 150ms, -webkit-box-shadow 150ms;
+  transition: background-color 150ms, -webkit-box-shadow 150ms;
+  transition: box-shadow 150ms, background-color 150ms;
+  transition: box-shadow 150ms, background-color 150ms, -webkit-box-shadow 150ms;
+  /* button styles start here */
+  /* button styles end here */
+}
+
+.btn__primary {
+  border: 2px solid #938581;
+  background-color: #938581;
+  color: #FCFFFD;
+}
+
+.btn__primary:hover {
+  background-color: #75C9C8;
+  -webkit-box-shadow: 0 0 15px #938581;
+          box-shadow: 0 0 15px #938581;
+}
+
+.btn__outline {
+  background-color: #75C9C8;
+  border: 2px solid #75C9C8;
+  color: #FCFFFD;
+}
+
+.btn__outline:hover {
+  color: #FCFFFD;
+  background-color: #938581;
+  -webkit-box-shadow: 0 0 15px #938581;
+          box-shadow: 0 0 15px #938581;
+}
+/*# sourceMappingURL=variable-challenge.css.map */
