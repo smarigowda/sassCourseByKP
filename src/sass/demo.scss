@@ -7,7 +7,9 @@ h1 {
         color: red;
     }
     &:hover {
-        background-color: yellow;
+        background: {
+            color: blue;
+        }
     }
     &:active {
         background-color: green;
