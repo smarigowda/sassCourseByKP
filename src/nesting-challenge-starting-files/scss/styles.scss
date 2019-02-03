@@ -1,3 +1,4 @@
+$primary-bg-color: #19647E;
 body {
   margin: 0;
   text-align: center;
@@ -15,7 +16,7 @@ body {
     decoration: none;
   }
   &__primary {
-    background-color: #19647E;
+    background-color: $primary-bg-color;
     &:hover {
       background-color: #0f3c4b;
     }
