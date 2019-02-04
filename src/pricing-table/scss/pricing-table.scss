@@ -62,8 +62,15 @@ h2 {
     transition: all ease-out 200ms;
     &:hover {
         box-shadow: $bs;
-        background: $clr-accent;
         transform: scale(1.22);
+    }
+    &--accent {
+        background: $white;
+        color: $clr-accent;
+        &:hover {
+            background: $dark-gray;
+            color: $white;
+        }
     }
 }
 .pricing {
@@ -76,6 +83,7 @@ h2 {
     max-width: 2000px;
     margin: 0 auto;
     justify-content: center;
+    align-items: center;
 }
 
 .price {
@@ -114,6 +122,16 @@ h2 {
                 size:  $fs-body;
                 weight: $fw-l;
             }
+        }
+    }
+
+    &--accent {
+        padding-top: 8 * $spacer;
+        padding-bottom: 8 * $spacer;
+        background: $clr-accent;
+        & .price__title,
+        & .price__cost {
+            color: $white;
         }
     }
 }

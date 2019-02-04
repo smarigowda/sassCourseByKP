@@ -35,9 +35,18 @@ h2 {
 .button:hover {
   -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
-  background: #72b01d;
   -webkit-transform: scale(1.22);
           transform: scale(1.22);
+}
+
+.button--accent {
+  background: #fff;
+  color: #72b01d;
+}
+
+.button--accent:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 
 .pricing {
@@ -54,6 +63,9 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .price {
@@ -96,5 +108,16 @@ h2 {
 .price__cost span {
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+.price--accent {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: #72b01d;
+}
+
+.price--accent .price__title,
+.price--accent .price__cost {
+  color: #fff;
 }
 /*# sourceMappingURL=pricing-table.css.map */
