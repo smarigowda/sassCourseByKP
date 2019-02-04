@@ -2,7 +2,7 @@
 
 // Colors
 $white: #fff;
-$light-gray: rgba(0,0,0,.35);
+$light-gray: rgba(0,0,0,.15);
 $dark-gray: rgba(0,0,0,.5);
 $green: #72b01d;
 
@@ -48,12 +48,23 @@ h2 {
     text-transform: uppercase;
 }
 
+// Buttons
+.button {
+    display: inline-block;
+    padding: ($spacer * 2) ($spacer * 6);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 1px $clr-body;
+    background-color: $clr-body;
+    color: white;
+    font-weight: $fw-b;
+}
 .pricing {
     text-align: center;
 }
 
 .prices {
-    display: flex;
+    // display: flex;
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
@@ -65,5 +76,33 @@ h2 {
     padding: 5 * $spacer;
     &__title {
         color: $clr-accent;
+        letter-spacing: $ls;
+        text-transform: uppercase;
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__list-item {
+        &:not(:last-of-type)::after {
+            display: block;
+            content: '';
+            height: 2px;
+            background: $light-gray;
+            margin: ($spacer * 2) 0
+        }
+    }
+    &__cost {
+        font-size: $fs-xl;
+        font-weight: $fw-b;
+        color: $clr-accent;
+
+        span {
+            font: {
+                size:  $fs-body;
+                weight: $fw-l;
+            }
+        }
     }
 }
