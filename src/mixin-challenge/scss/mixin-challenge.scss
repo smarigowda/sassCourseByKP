@@ -1,0 +1,18 @@
+body {
+  font-size: 3rem;
+}
+
+.section-one,
+.section-two,
+.section-three {
+  text-align: center;
+  padding: 25vh 0;
+}
+
+@mixin gradient($from, $to) {
+  background: linear-gradient($from, $to);
+}
+
+.section-one {
+  @include gradient(blue, green);
+}
