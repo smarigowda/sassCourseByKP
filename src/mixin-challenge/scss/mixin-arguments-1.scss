@@ -1,0 +1,15 @@
+@mixin button {
+    display: block;
+    padding: 1px 10px;
+    text: {
+        decoration: none;
+        transform: uppercase;
+    }
+}
+
+
+.primary-button {
+    @include button;
+    background: red;
+    color: black;
+}
