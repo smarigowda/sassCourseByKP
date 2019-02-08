@@ -4,6 +4,15 @@
   text-decoration: none;
   text-transform: uppercase;
   background: cyan;
-  color: red;
+  color: blue;
+}
+
+.secondary-button {
+  display: block;
+  padding: 1px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: green;
+  color: yellow;
 }
 /*# sourceMappingURL=mixin-arguments-1.css.map */
