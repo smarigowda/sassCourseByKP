@@ -1,4 +1,4 @@
-@mixin button($color, $bg) {
+@mixin button($color: red, $bg: green) {
     display: block;
     padding: 1px 10px;
     text: {
@@ -11,5 +11,5 @@
 
 
 .primary-button {
-    @include button(red, blue);
+    @include button;
 }
