@@ -11,5 +11,5 @@
 
 
 .primary-button {
-    @include button;
+    @include button($bg: cyan);
 }
