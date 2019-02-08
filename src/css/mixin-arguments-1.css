@@ -1,0 +1,9 @@
+.primary-button {
+  display: block;
+  padding: 1px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: blue;
+  color: red;
+}
+/*# sourceMappingURL=mixin-arguments-1.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAYA,AAAA,eAAe,CAAC;EAXZ,OAAO,EAAE,KAAK;EACd,OAAO,EAAE,QAAQ;EAEb,eAAU,EAAE,IAAI;EAChB,cAAS,EAAE,SAAS;EAExB,UAAU,EAMW,IAAI;EALzB,KAAK,EAKW,GAAG;CACtB",
+    "sources": [
+        "../mixin-challenge/scss/mixin-arguments-1.scss"
+    ],
+    "names": [],
+    "file": "mixin-arguments-1.css"
+}
