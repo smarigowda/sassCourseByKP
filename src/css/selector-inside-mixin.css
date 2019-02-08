@@ -1,0 +1,12 @@
+.footer {
+  color: red;
+}
+
+.footer a {
+  color: blue;
+}
+
+.footer a:hover {
+  color: green;
+}
+/*# sourceMappingURL=selector-inside-mixin.css.map */

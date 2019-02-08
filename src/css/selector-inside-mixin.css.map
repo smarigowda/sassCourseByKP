@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAWE,AAAA,OAAO,CAAC;EAVN,KAAK,EAAE,GAAG;CAYX;;AAFD,AATE,OASK,CATL,CAAC,CAAC;EACA,KAAK,EAAE,IAAI;CAIZ;;AAIH,AAPI,OAOG,CATL,CAAC,AAEE,MAAM,CAAC;EACN,KAAK,EAAE,KAAK;CACb",
+    "sources": [
+        "../mixin-challenge/scss/selector-inside-mixin.scss"
+    ],
+    "names": [],
+    "file": "selector-inside-mixin.css"
+}

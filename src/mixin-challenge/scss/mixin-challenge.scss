@@ -14,5 +14,5 @@ body {
 }
 
 .section-one {
-  @include gradient(blue, green);
+  @include gradient(blue, red);
 }

@@ -1,0 +1,14 @@
+@mixin highlight {
+    color: red;
+    a {
+      color: blue;
+      &:hover {
+        color: green;
+      }
+    }
+  }
+  
+  
+  .footer {
+    @include highlight;
+  }
