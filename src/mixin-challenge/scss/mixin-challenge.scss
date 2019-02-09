@@ -9,10 +9,34 @@ body {
   padding: 25vh 0;
 }
 
-@mixin gradient($from, $to) {
-  background: linear-gradient($from, $to);
+@mixin gradient($deg, $from, $to) {
+  background: linear-gradient($deg, $from, $to);
+}
+
+@mixin pseudo($width: 200px, $height: 1px, $bg: orange) {
+  &::after {
+    content: '';
+    display: block;
+    width: $width;
+    height: $height;
+    background: $bg;
+    margin: 0 auto;
+  }
 }
 
 .section-one {
-  @include gradient(blue, red);
+  @include gradient(45deg, blue, red);
+}
+
+.section-two {
+  @include gradient(150deg, #177e89, #084c61);
+}
+
+.section-three {
+  @include gradient(250deg, lightskyblue, deepskyblue);
+}
+
+.title {
+  position: relative;
+  @include pseudo(50px, 2px, orangered);
 }
