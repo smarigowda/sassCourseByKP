@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,IAAI,CAAC;EAHD,UAAU,EADiB,CAAC,CAAO,CAAC,CAKhB,GAAG;CAC1B",
+    "sources": [
+        "../mixin-challenge/scss/mixin-required-args-first.scss"
+    ],
+    "names": [],
+    "file": "mixin-required-args-first.css"
+}

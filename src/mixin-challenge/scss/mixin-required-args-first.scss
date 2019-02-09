@@ -1,0 +1,7 @@
+@mixin box-shadow($color, $vo: 0, $ho: 0, $blur: 0) {
+    box-shadow: $vo $ho $color;
+}
+
+.box {
+    @include box-shadow(red);
+}
