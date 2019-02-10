@@ -53,11 +53,11 @@ body {
 .title {
   position: relative;
   margin-bottom: 10px;
-  @include pseudo(150px, 1px, white);
+  @include pseudo($width: 150px, $height: 1px, $bg: white);
 }
 
 .button-one {
-  @include button($color: red, $bg: green, $hvr-color: white, $hvr-bg: red);
+  @include button($color: black, $bg: green, $hvr-color: white, $hvr-bg: red);
 }
 
 .button-two {
