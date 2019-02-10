@@ -10,7 +10,73 @@ body {
 }
 
 .section-one {
-  background: -webkit-gradient(linear, left top, left bottom, from(blue), to(red));
-  background: linear-gradient(blue, red);
+  background: linear-gradient(45deg, blue, red);
+}
+
+.section-two {
+  background: linear-gradient(150deg, #177e89, #084c61);
+}
+
+.section-three {
+  background: linear-gradient(250deg, lightskyblue, deepskyblue);
+}
+
+.title {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 1px;
+  background: white;
+  margin: 0 auto;
+}
+
+.button-one {
+  padding: .3em 1em;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: green;
+  color: red;
+}
+
+.button-one:hover {
+  background-color: red;
+  color: white;
+}
+
+.button-two {
+  padding: .3em 1em;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: yellow;
+  color: blue;
+}
+
+.button-two:hover {
+  background-color: red;
+  color: white;
+}
+
+.button-three {
+  padding: .3em 1em;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+}
+
+.button-three:hover {
+  background-color: red;
+  color: white;
 }
 /*# sourceMappingURL=mixin-challenge.css.map */

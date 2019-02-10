@@ -24,6 +24,20 @@ body {
   }
 }
 
+@mixin button($color, $bg, $hvr-color, $hvr-bg) {
+  padding: .3em 1em;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $bg;
+  color: $color;
+  &:hover {
+    background-color: $hvr-bg;
+    color: $hvr-color;
+  }
+
+}
 .section-one {
   @include gradient(45deg, blue, red);
 }
@@ -38,5 +52,18 @@ body {
 
 .title {
   position: relative;
-  @include pseudo(50px, 2px, orangered);
+  margin-bottom: 10px;
+  @include pseudo(150px, 1px, white);
+}
+
+.button-one {
+  @include button($color: red, $bg: green, $hvr-color: white, $hvr-bg: red);
+}
+
+.button-two {
+  @include button($color: blue, $bg: yellow, $hvr-color: white, $hvr-bg: red);
+}
+
+.button-three {
+  @include button($color: white, $bg: black, $hvr-color: white, $hvr-bg: red);
 }
