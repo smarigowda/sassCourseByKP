@@ -1,0 +1,12 @@
+body {
+    height: 100vh;
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 600px;
+    background: lighten(green, 10);
+}

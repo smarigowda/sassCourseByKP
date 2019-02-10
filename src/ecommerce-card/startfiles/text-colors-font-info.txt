@@ -1,0 +1,25 @@
+dark green - #11998e
+bright green - #38ef7d
+orange - #ff715b
+
+title - Raleway black 69px
+
+price - Raleway Light 60px  30px
+
+description - Raleway Medium 24px
+
+buttons - Raleway Medium 18px
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,900');
+
+
+
+/////// text //////////
+
+Really nice shirt
+$49.99
+Aringilla nisi et, rhoncus sem. Cras id sodales sapien, vitae tincidunt lectus. 
+Add to cart
+Add to wishlist
+
+
