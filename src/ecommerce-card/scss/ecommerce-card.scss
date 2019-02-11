@@ -60,20 +60,23 @@ body {
     &__title {
         @include font(69px, $fw-bold);
         text-transform: uppercase;
+        margin-bottom: .3em;
     }
     &__image {
         position: absolute;
         left: -160px;
-        top: 3em;
+        top: 4.5em;
     }
     &__price {
         @include font(60px, $fw-light);
+        margin-bottom: .2em;
         & span {
             @include font(30px, $fw-light);
         }
     }
     &__desc {
         @include font(24px, $fw-normal, rgba(black, .6));
+        margin-bottom: .5em;
     }
 
 }
