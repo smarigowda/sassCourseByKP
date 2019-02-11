@@ -45,4 +45,20 @@ body {
   left: -160px;
   top: 3em;
 }
+
+.card__price {
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: white;
+}
+
+.card__price span {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: white;
+}
 /*# sourceMappingURL=ecommerce-card.css.map */
