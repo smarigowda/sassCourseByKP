@@ -12,11 +12,26 @@
 $clr-dark-green: #11998e;
 $clr-bright-green: #38ef7d;
 $clr-orange: #ff715b;
-$ff: 'Raleway', sans-serif;
+$clr-white: white;
 
+$ff-ss: 'Raleway', sans-serif;
+$fw-bold: 900;
+$fw-normal: 500;
+$fw-light: 300;
+
+// MIXINS
 @mixin box-shadow($ho, $vo, $blur, $color) {
     box-shadow: $ho $vo $blur $color;
 }
+
+@mixin font($fs, $fw, $clr, $lh: 1.5, $ff: $ff-ss) {
+    font-family: $ff;
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+    color: $clr;
+}
+
 body {
     height: 100vh;
     background: lightblue;
@@ -35,16 +50,15 @@ body {
     position: relative;
 
     &__title {
-        font-family: $ff;
-        font-size: 69px;
+        @include font(69px, $fw-bold, $clr-white);
         text-transform: uppercase;
-        line-height: 1.5;
-        font-weight: 900;
-        color: white;
     }
     &__image {
         position: absolute;
         left: -160px;
         top: 3em;
+    }
+    &__price {
+
     }
 }
