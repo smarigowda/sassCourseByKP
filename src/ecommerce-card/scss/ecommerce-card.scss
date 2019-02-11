@@ -13,6 +13,10 @@ $clr-dark-green: #11998e;
 $clr-bright-green: #38ef7d;
 $clr-orange: #ff715b;
 $ff: 'Raleway', sans-serif;
+
+@mixin box-shadow($ho, $vo, $blur, $color) {
+    box-shadow: $ho $vo $blur $color;
+}
 body {
     height: 100vh;
     background: lightblue;
@@ -24,7 +28,7 @@ body {
 .card {
     width: 700px;
     background: linear-gradient(-45deg, $clr-dark-green, $clr-bright-green);
-    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+    @include box-shadow(0,0,25px,rgba(black, .5));
     padding: 2em;
     padding-left: 12em;
     border-radius: 9px;
