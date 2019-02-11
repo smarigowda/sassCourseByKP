@@ -32,6 +32,14 @@ $fw-light: 300;
     color: $clr;
 }
 
+@mixin button($clr, $bg, $padding: .5em 1.25em) {
+    display: inline-block;
+    text-decoration: none;
+    padding: $padding;
+    color: $clr;
+    background: $bg;
+}
+
 body {
     height: 100vh;
     background: lightblue;
@@ -62,6 +70,24 @@ body {
         @include font(60px, $fw-light);
         & span {
             @include font(30px, $fw-light);
+        }
+    }
+    &__desc {
+        @include font(24px, $fw-normal, rgba(black, .6));
+    }
+
+}
+
+.btn {
+    @include button($clr-white, transparent);
+    @include font(18px, $fw-normal, $clr-white);
+    border-radius: 10px;
+    &--accent {
+        background: $clr-orange;
+        @include box-shadow(0,0,10px,rgba(black, 0.1));
+        transition: box-shadow ease-out 300ms;
+        &:hover {
+            @include box-shadow(0,0,10px,rgba(black, 0.5));
         }
     }
 }

@@ -61,4 +61,41 @@ body {
   font-weight: 300;
   color: white;
 }
+
+.card__desc {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 1.25em;
+  color: white;
+  background: transparent;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: white;
+  border-radius: 10px;
+}
+
+.btn--accent {
+  background: #ff715b;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: -webkit-box-shadow ease-out 300ms;
+  transition: -webkit-box-shadow ease-out 300ms;
+  transition: box-shadow ease-out 300ms;
+  transition: box-shadow ease-out 300ms, -webkit-box-shadow ease-out 300ms;
+}
+
+.btn--accent:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 /*# sourceMappingURL=ecommerce-card.css.map */
